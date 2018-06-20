@@ -679,48 +679,129 @@
 
   <div class="ph3">
     <h3 class="bp-fs-4">Input</h3>
-    <div class="flex flex-column">
+    <table class="w-100" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr class="flex w-100">
+          <td class="w-50">
+            <div class="bp-input-wrapper flex flex-column justify-around mv2">
+              <label class="bp-label bp-c-rooftop">Label</label>
+              <div class="bp-c-cloud bp-fs-6">Placeholder</div>
+            </div>
+          </td>
+          <td class="pl3 bp-fs-5 tc flex items-center bp-c-black w-50">Input wrapper
+            <span class="bp-c-rooftop">.bp-input-wrapper</span>
+          </td>
+        </tr>
+        <tr class="flex w-100">
+          <td class="w-50">
+            <div class="bp-input-wrapper bp-input-wrapper--focus flex flex-column justify-around mv2">
+              <label class="bp-label bp-c-blip-dark">Label</label>
+              <div class="bp-fs-6">Text Here</div>
+            </div>
+          </td>
+          <td class="pl3 bp-fs-5 tc flex items-center bp-c-black w-50">Input + focus
+            <span class="bp-c-rooftop">.bp-input-wrapper--focus</span>
+          </td>
+        </tr>
+        <tr class="flex w-100">
+          <td class="w-50">
+            <div class="bp-input-wrapper bp-input-wrapper--invalid flex flex-column justify-around mv2">
+              <label class="bp-label bp-c-warning">Label</label>
+              <div class="bp-fs-6">Text Here</div>
+            </div>
+          </td>
+          <td class="pl3 bp-fs-5 tc flex items-center bp-c-black w-50">Input inválido
+            <span class="bp-c-rooftop">.bp-input-wrapper--invalid</span>
+          </td>
+        </tr>
+        <tr class="flex w-100">
+          <td class="w-50">
+            <div class="bp-input-wrapper bp-input-wrapper--valid flex flex-column justify-around mv2">
+              <label class="bp-label bp-c-true">Label</label>
+              <div class="bp-fs-6">Text Here</div>
+            </div>
+          </td>
+          <td class="pl3 bp-fs-5 tc flex items-center bp-c-black w-50">Input válido
+            <span class="bp-c-rooftop">.bp-input-wrapper--valid</span>
+          </td>
+        </tr>
+        <tr class="flex w-100">
+          <td class="w-50">
+            <div class="bp-input-wrapper bp-input-wrapper--disabled flex flex-column justify-around mv2">
+              <label class="bp-label bp-c-rooftop">Label</label>
+              <div class="bp-c-cloud bp-fs-6">Text Here</div>
+            </div>
+          </td>
+          <td class="pl3 bp-fs-5 tc flex items-center bp-c-black w-50">Input disabled
+            <span class="bp-c-rooftop">.bp-input-wrapper--disabled</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-      <div class="bp-input-wrapper flex flex-column justify-around mv2">
-        <label class="bp-label bp-c-rooftop">Label</label>
-        <div class="bp-c-cloud bp-fs-6">Placeholder</div>
-      </div>
-
-      <div class="bp-input-wrapper flex flex-column justify-around mv2">
-        <label class="bp-label bp-c-rooftop">Label</label>
-        <div class="bp-fs-6">Text Here</div>
-      </div>
-
-      <div class="bp-input-wrapper bp-input-wrapper--focus flex flex-column justify-around mv2">
-        <label class="bp-label bp-c-blip-dark">Label</label>
-        <div class="bp-fs-6">Text Here</div>
-      </div>
-
-      <div class="bp-input-wrapper bp-input-wrapper--disabled flex flex-column justify-around mv2">
-        <label class="bp-label bp-c-rooftop">Label</label>
-        <div class="bp-c-cloud bp-fs-6">Text Here</div>
-      </div>
-
-      <div class="bp-input-wrapper bp-input-wrapper--focus bp-input-wrapper--invalid flex flex-column justify-around mv2">
-        <label class="bp-label bp-c-warning">Label</label>
-        <div class="bp-fs-6">Text Here</div>
-      </div>
-
-      <div class="bp-input-wrapper bp-input-wrapper--focus bp-input-wrapper--valid flex flex-column justify-around mv2">
-        <label class="bp-label bp-c-true">Label</label>
-        <div class="bp-fs-6">Text Here</div>
-      </div>
-
-    </div>
-
-    <h3 class="bp-fs-4">Select</h3>
-    <div class="flex flex-column">
-
-      <div>
-
-      </div>
-
-    </div>
+    <h3 class="bp-fs-4">Checkbox</h3>
+      <table class="w-100" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr class="flex w-100 mb2">
+            <td class="w-50">
+              <label class="bp-input--check--wrapper flex items-center">
+                <input class="bp-input" type="checkbox" name="checkbox-input" value="1" checked>
+                <div class="bp-input--checkbox bp-fs-6 bp-c-white tc mr2">&check;</div>
+                <span>Opção 1</span>
+              </label>
+            </td>
+            <td class="pl3 bp-fs-5 tc flex items-center bp-c-black w-50">Checkbox
+              <span class="bp-c-rooftop">.bp-input--checkbox</span>
+            </td>
+          </tr>
+          <tr class="flex w-100 mb2">
+            <td class="w-50">
+              <label class="bp-input--check--wrapper flex items-center">
+                <input class="bp-input" type="checkbox" name="checkbox-input" value="2">
+                <div class="bp-input--checkbox bp-fs-6 bp-c-white tc mr2">&check;</div>
+                <span>Opção 2</span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+        </tbody>
+      </table>
+    
+    <h3 class="bp-fs-4">Radio</h3>
+    <table class="w-100" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr class="flex w-100 mb2">
+          <td class="w-50">
+            <label class="bp-input--check--wrapper pb0 mb0 flex items-center">
+              <input class="bp-input" type="radio" value="1" name="radio-group">
+              <div class="bp-input--radio"></div>
+              <span class="ml2">Opção 1</span>
+            </label>
+          </td>
+          <td class="pl3 bp-fs-5 tc flex items-center bp-c-black w-50">Radio
+            <span class="bp-c-rooftop">.bp-input--radio</span>
+          </td>
+        </tr>
+        <tr class="flex w-100 mb2">
+          <td class="w-50">
+            <label class="bp-input--check--wrapper pb0 mb0 flex items-center">
+              <input class="bp-input" type="radio" value="2" name="radio-group">
+              <div class="bp-input--radio"></div>
+              <span class="ml2">Opção 2</span>
+            </label>
+          </td>
+        </tr>
+        <tr class="flex w-100 mb2">
+          <td class="w-50">
+            <label class="bp-input--check--wrapper pb0 mb0 flex items-center">
+              <input class="bp-input" type="radio" value="3" name="radio-group">
+              <div class="bp-input--radio"></div>
+              <span class="ml2">Opção 3</span>
+            </label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </body>

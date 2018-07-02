@@ -1,0 +1,78 @@
+{
+  "name": "blip-toolkit-docs",
+  "description": "BLiP's Toolkit Documentation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "author": "Brenner Pacelli <brenner_pacelli@hotmail.com>",
+  "private": false,
+  "scripts": {
+    "commit": "./node_modules/.bin/git-cz",
+    "start": "./node_modules/.bin/webpack-dev-server --mode development --open --config ./build/webpack.dev.conf.js",
+    "build": "webpack --mode production --config ./build/webpack.prod.conf.js",
+    "lint": "./node_modules/.bin/eslint .",
+    "semantic-release": "./node_modules/.bin/semantic-release --prepare && npm publish && semantic-release post",
+    "test": "./node_modules/.bin/babel-node ./spec/run.js",
+    "test:show-coverage": "./node_modules/.bin/babel-node ./node_modules/babel-istanbul/lib/cli cover --report text ./spec/run.js",
+    "test:report-html": "./node_modules/.bin/babel-node ./node_modules/babel-istanbul/lib/cli cover --report html ./spec/run.js",
+    "test:check-coverage": "./node_modules/.bin/istanbul check-coverage",
+    "test:upload-coverage": "cat ./coverage/lcov.info | codecov"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-istanbul": "^0.12.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "commitizen": "^2.9.6",
+    "css-loader": "^0.28.11",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "ghooks": "^2.0.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jsdom": "^11.11.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "module-alias": "^2.0.6",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "semantic-release": "^15.2.0",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takenet/blip-toolkit-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/takenet/blip-toolkit-docs/issues"
+  },
+  "homepage": "https://github.com/takenet/blip-toolkit-docs#readme",
+  "keywords": [
+    "blip",
+    "css",
+    "toolkit",
+    "components"
+  ],
+  "dependencies": {
+    "blip-toolkit": "^1.10.6",
+    "stylemark": "^3.0.1",
+    "tachyons": "^4.10.0"
+  }
+}
